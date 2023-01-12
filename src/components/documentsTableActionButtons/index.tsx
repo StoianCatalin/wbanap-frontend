@@ -3,7 +3,7 @@ import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import SearchIcon from '@mui/icons-material/Search';
 import React from 'react';
 import styled from 'styled-components';
-import DownloadButton from 'components/downloadButton';
+import DownloadDocumentButton from 'components/downloadDocumentButton';
 
 const StyledBox = styled(Box)`
   display: flex;
@@ -12,7 +12,7 @@ const StyledBox = styled(Box)`
 export const ActionButtons = () => {
   return (
     <StyledBox>
-      <DownloadButton fileUrl='https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf' />
+      <DownloadDocumentButton fileUrl='src/static/dummy.pdf' />
       <IconButton>
         <RemoveRedEyeIcon fontSize='small' />
       </IconButton>
